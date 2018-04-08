@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Redbook Home</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="ico1.png">
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <a class="navbar-brand" href="index.html">RedBook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <form class="form-inline my-2 my-lg-0">
+      	
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">profile</a>
+      </li>
+      
+  
+    </ul>
+    </form>
+  </div>
+</nav>
+
+	<section id="newsFeed">
+		<div class="container text-center p-5" >
+			
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-12 ">
+					<div class="card border-danger mb-3 mx-auto" style="max-width: 50rem;">
+  <div class="card-header">NewsFeed</div>
+  <div class="card-body text-danger">
+    <h5 class="card-title" id="magic">Here the magic will happen</h5>
+    <p class="card-text" id="feedsList"></p>
+  </div>
+</div>
+				</div>
+			</div>
+			
+			
+	
+		
+	</section>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mx-auto" id="exampleModalLabel">Please provide your token for FB</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	<div class="form-group">
+       		<form>
+       			
+      <div class="text-center"><label for="Input">Token Input</label></div>
+    <input type="text" class="form-control text-center" id="tokenInput" placeholder="input" required>
+    <br>
+    <button id="btnShowFbDetail" type="submit" class="form-control center-block btn btn-danger"> Get data</button>
+</form>
+  </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="feed.js"></script>
+</body>
+</html>

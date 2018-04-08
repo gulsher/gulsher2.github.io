@@ -1,0 +1,10 @@
+body{
+  background-image:url(background.jpg);
+  align-items: center;
+    justify-content: center;
+    background-repeat: repeat-y no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+

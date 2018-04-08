@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Redbook Profile</title>
+
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="icon" href="ico1.png">
+</head>
+<body>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+  <a class="navbar-brand" href="index.html">RedBook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <form class="form-inline my-2 my-lg-0">
+      	
+      <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="profile.html">profile <span class="sr-only">(current)</span></a>
+      </li>
+      
+  
+    </ul>
+    </form>
+  </div>
+</nav>
+
+
+<section id="displayProfile">
+	<div class="container text-center p-5" >
+	<div class="row">
+				<div id="cover" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 coverHeight">
+
+          <div class="row">
+
+            <div id="profilePhoto" class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2" style="margin:3em 0 1em 0;">
+              
+            </div>
+
+          </div>
+					
+				</div>
+        </div>
+        <div class="jumbotron">
+        <div class="row p-3">
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 userDetails">
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              Name :
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="userName">
+            </div>
+
+          </div>
+
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              Quote : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="favouritrQuote">
+            </div>
+
+          </div>
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              Email : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="EmailId">
+            </div>
+
+          </div>
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              Gender : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="Gender">
+            </div>
+
+          </div>
+
+          <div class="row rowStyle">
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+              Dob : 
+            </div>
+            <div class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10" id="Dob">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+		</div>
+</section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mx-auto" id="exampleModalLabel">Please provide your token for FB</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	<div class="form-group">
+       		<form>
+       			
+      <div class="text-center"><label for="Input">Token Input</label></div>
+    <input type="text" class="form-control text-center" id="tokenInput" placeholder="input" required>
+    <br>
+    <button id="btnShowFbDetail" type="submit" class="form-control center-block btn btn-danger"> Get data</button>
+</form>
+  </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+<script src="anim.js"></script>
+</body>
+</html>
